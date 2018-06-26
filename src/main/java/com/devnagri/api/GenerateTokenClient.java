@@ -22,6 +22,8 @@ public class GenerateTokenClient {
     public String clientId;
     public String clientSecret;
     public String projectKey;
+    private RestClient restClient;
+    private int statusCode;
 
     public GenerateTokenClient(String clientId, String clientSecret, String projectKey){
         this.clientId = clientId;
@@ -44,18 +46,14 @@ public class GenerateTokenClient {
                 .addTextBody("client_secret", clientSecret)
                 .addTextBody("project_key", projectKey);
 
-        RestClient restClient = new RestClient();
+        restClient = new RestClient();
         response = restClient.callService(urlGenerateToken, entity, token);
-        if(null!=response && !response.equalsIgnoreCase("") && restClient.getstatusCode()==200){
+        statusCode = restClient.getstatusCode();
+        if(null!=response && !response.equalsIgnoreCase("") && statusCode==200){
             JSONObject jsonObject = new JSONObject(response);
 
-            String token_type = jsonObject.getString("token_type");
             String access_token = jsonObject.getString("access_token");
-
             token = access_token;
-            //System.out.println("Response is : "+ response);
-            //System.out.println("Token : "+ token);
-
             final String fileName = "devnagri.yml";
             ArrayList<String> key = new ArrayList<String>();
             ArrayList<String> value = new ArrayList<String>();
@@ -121,6 +119,10 @@ public class GenerateTokenClient {
 
     public String getToken(){
         return token;
+    }
+
+    public int statusCode(){
+        return statusCode;
     }
 
 }

@@ -9,12 +9,12 @@
     <!-- ********************************************** -->
     <groupId>com.devnagri</groupId>
     <artifactId>devnagri-api-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
         <name>Basic Maven Project</name>
         <description>A Maven project created from the library archetype.</description>
-        <url>https://github.com/bernardo-mg/api</url>
-        <inceptionYear>2017</inceptionYear>
+        <url>https://github.com/FourtekIT/devnagri-api-client-java</url>
+        <inceptionYear>2018</inceptionYear>
 
         <licenses>
             <license>
@@ -29,15 +29,15 @@
         <!-- ********************************************** -->
 
         <scm>
-            <connection>scm:git:https://github.com/bernardo-mg/api.git</connection>
-            <developerConnection>scm:git:https://github.com/bernardo-mg/api.git</developerConnection>
+            <connection>scm:git:https://github.com/FourtekIT/devnagri-api-client-java.git</connection>
+            <developerConnection>scm:https://github.com/FourtekIT/devnagri-api-client-java.git</developerConnection>
             <tag>head</tag>
-            <url>https://www.github.com/bernardo-mg/api</url>
+            <url>https://github.com/FourtekIT/devnagri-api-client-java</url>
         </scm>
 
         <issueManagement>
             <system>GitHub</system>
-            <url>https://www.github.com/bernardo-mg/api/issues</url>
+            <url>https://github.com/FourtekIT/devnagri-api-client-java/issues</url>
         </issueManagement>
 
         <ciManagement>
@@ -51,7 +51,7 @@
                 <uniqueVersion>false</uniqueVersion>
                 <id>releases</id>
                 <name>Releases Repository</name>
-                <url>https://api.bintray.com/maven/bernardo-mg/maven/api</url>
+                <url>https://bintray.com/gauravsengar/maven-api/devnagri-api-client</url>
             </repository>
             <snapshotRepository>
                 <uniqueVersion>false</uniqueVersion>
@@ -164,22 +164,22 @@
         <!-- ********************************************** -->
 
         <organization>
-            <name>Bernardo Martínez Garrido</name>
-            <url>https://github.com/Bernardo-MG</url>
+            <name>Fourtek IT Solutions</name>
+            <url>http://www.fourtek.com</url>
         </organization>
 
         <developers>
             <developer>
-                <id>bmg</id>
-                <name>Bernardo Martínez Garrido</name>
-                <email>programming@bernardomg.com</email>
-                <url>https://github.com/Bernardo-MG</url>
-                <organization>Bernardo Martínez Garrido</organization>
-                <organizationUrl>https://github.com/Bernardo-MG</organizationUrl>
+                <id>gs</id>
+                <name>Gaurav Sengar</name>
+                <email>gauravsengar@fourtek.com</email>
+                <url>https://github.com/FourtekIT</url>
+                <organization>FourtekIT</organization>
+                <organizationUrl>http://www.fourtek.com</organizationUrl>
                 <roles>
                     <role>Developer</role>
                 </roles>
-                <timezone>+1</timezone>
+                <timezone>+5:30</timezone>
                 <properties />
             </developer>
         </developers>
@@ -204,7 +204,7 @@
             <!-- ================= MAVEN SITE ================= -->
             <!-- ============================================== -->
             <site.skin.version>1.2.0</site.skin.version>
-            <bintrayURL>https://bintray.com/bernardo-mg/maven/api/view</bintrayURL>
+            <bintrayURL>https://bintray.com/gauravsengar/maven-api/devnagri-api-client/view</bintrayURL>
             <mavenURL>http://mvnrepository.com/artifact/${project.groupId}/${project.artifactId}</mavenURL>
         </properties>
 

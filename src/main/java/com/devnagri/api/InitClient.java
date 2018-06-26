@@ -32,12 +32,11 @@ public class InitClient {
         if ("init".equals(requestType)) {
             GenerateTokenClient generateTokenClient = new GenerateTokenClient(clientId, clientSecret, projectKey);
             response = generateTokenClient.getGeneratedToken();
-            if(null!=response && !response.equalsIgnoreCase("")){
+            if(null!=response && !response.equalsIgnoreCase("") && generateTokenClient.statusCode()==200){
                 accessToken = generateTokenClient.getToken();
                 this.accessToken = accessToken;
                 init(project);
             }
-
         } else if ("status".equals(requestType)) {
             StatusClient statusClient = new StatusClient(accessToken, clientId, clientSecret, projectKey);
             response = statusClient.getStatus();

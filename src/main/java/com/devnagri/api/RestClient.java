@@ -38,34 +38,7 @@ public class RestClient {
         }
 
         request.addHeader(/*"content-type"*/"Accept", "application/json");
-        //request.addHeader("content-type", /*"application/x-www-form-urlencoded"*/"form-data");
-        /*Map<String, String> map = new HashMap<>();
-        map.put("client_id", "1");
-        map.put("client_secret", "uA9nGZeiOTZ8KbFCjmCke21YLdqkDqF3ecwkHXvQ");
-        map.put("project_key", "1bbbb84f24818351917a67b23e5e48e1");
-        request.setEntity(map);*/
 
-        /* PROXY CONFIG */
-      /*  HttpHost target = new HttpHost("proxy", 8080, "http");
-        RequestConfig config = RequestConfig.custom().setProxy(target).build();
-        request.setConfig(config);*/
-
-        /* JSON AS STRINGENTITY */
-
-        /*MultipartEntityBuilder builder = MultipartEntityBuilder.create();
-
-        *//* example for setting a HttpMultipartMode *//*
-        builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-
-        *//* example for adding an image part *//*
-        FileBody fileBody = new FileBody(new File(image)); //image should be a String
-        builder.addPart("my_file", fileBody);*/
-        /*StringEntity input = null;
-        try {
-            input = new StringEntity(json);
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }*/
         HttpEntity multiPartEntity = myRequest.build();
         request.setEntity(multiPartEntity);
 
@@ -80,19 +53,18 @@ public class RestClient {
 
         /* RESPONSE AS JSON STRING */
         String result = null;
-        try {
-            result = IOUtils.toString(response.getEntity().getContent(), "UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (statusCode==200){
+            try {
+                result = IOUtils.toString(response.getEntity().getContent(), "UTF-8");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else{
+            result = response.toString();
         }
+
         return result;
     }
-
-   /* public static void main(String[] args) {
-        com.devnagri.services.RestClient restClient = new com.devnagri.services.RestClient();
-        String response = restClient.callService();
-        System.out.println(response);
-    }*/
 
    public int getstatusCode(){
        return statusCode;

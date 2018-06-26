@@ -37,7 +37,7 @@ public class SyncClient {
                 .addTextBody("client_secret", clientSecret)
                 .addTextBody("project_key", projectKey)
                 .addTextBody("file[0]", file)
-                .addTextBody("file[location]", fileLocation);
+                .addTextBody("file[1]", fileLocation);
 
         RestClient restClient = new RestClient();
         response = restClient.callService(urlSync, entity, token);

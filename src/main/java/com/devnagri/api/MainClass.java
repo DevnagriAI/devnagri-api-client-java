@@ -40,16 +40,13 @@ public class MainClass {
 
     public static void main(String[] args) throws IOException {
 
-       // InitClient initClient = new InitClient();
-       // response = initClient.getResponseRequest("init","eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjcxM2Q0NjZkMzYxNGM2YTExYjI4ZjA3ODhhOTUxMTViMjE4YzY4YjFhNjJjYjU2MzU5ODJlMmMzMTVmNzg0MmZhNDc4MDZhNjI3Y2IxOTdlIn0.eyJhdWQiOiIxIiwianRpIjoiNzEzZDQ2NmQzNjE0YzZhMTFiMjhmMDc4OGE5NTExNWIyMThjNjhiMWE2MmNiNTYzNTk4MmUyYzMxNWY3ODQyZmE0NzgwNmE2MjdjYjE5N2UiLCJpYXQiOjE1MjkzOTI5MzMsIm5iZiI6MTUyOTM5MjkzMywiZXhwIjoxNTYwOTI4OTMzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LU7l0T7YwXtzRWeJ2R-LHpK1JNOfZW0O7QOS0G63nuUr3x-Q4oZUsShGnX8XALuvV-xgLnVJIy2oYWcNz-MQUM55xrkP3edmKSPvI0bm5GbL3-U2SsYNs0oRPtV5sJNU4twW9ymBf8jyjkRPjJ5hmUIV5a2u0TPZTt3dAVMlJs7Pe17BRWte_VVA1pBI6PcLjLPAToHrUBgx4j4JeKNDtKhrGjByZQvym_eNxaMnU43gE9_NZ4MeC9q3gBOuwoMs_O7BNxKXfTmdlhQ-RzJ254xRL78UDTgAbt5KDfXTahuLhY55pjrSfLTexu1IfQf7OL0cN048R0hOst-oPDVx9quIG0qVzRthkPLvcCnbJsweuazxIiMqQchRL5ewuVdEu8BQNMqqJ8VUUajresemE4elLhGpzfRhTPeEhG04YnglwpP9I6PDOerESTHBRQZzC8A7mInVoDPw4gCeaP97aOB5XwBe7VejPHaMMDVf-g_-wvCxJTS67fZJFSW1ETxMtWJTlO6vEmvvdw8WcX3e1VldaeeQznaHORxUtVnD_fNmP-20aU4qNF8PLjBvXn3IKLEsjxo0zk2lXQecKTMPkBTLc_ZhPYt9Ij_1b-WS-ptHEXe5MfrWC8KAivrd_YQth3XH3BFGyXqxVjIaEhMGhQQZWLNOmN05PqX4nqs7M8o","3","vZ1pwI6CzwpBhz346KrdUrlvwA1evi3NghKsx1LK","dac5735828cd4a70819147fb36d24411","","",System.getProperty("user-dir"));
+        /*InitClient initClient = new InitClient();
+        response = initClient.getResponseRequest("init","eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI1YjllZjNkZjQyNmRlNDdhOGYxYjI3YzIwMDYyNjA4N2FjMWIwOWE2NGU4N2QxNzM0NTM1ZWMyZmFkNWI4YmNiZTg1ZDVkMTM3YzBjMGZiIn0.eyJhdWQiOiI0IiwianRpIjoiMjViOWVmM2RmNDI2ZGU0N2E4ZjFiMjdjMjAwNjI2MDg3YWMxYjA5YTY0ZTg3ZDE3MzQ1MzVlYzJmYWQ1YjhiY2JlODVkNWQxMzdjMGMwZmIiLCJpYXQiOjE1Mjk2NTMxNzYsIm5iZiI6MTUyOTY1MzE3NiwiZXhwIjoxNTYxMTg5MTc2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.hDQVhbZlX0TmHYzR6oJ4W1ehpIFqd61GEwQ7BDGLWNAoBWKN3SFsAaExhZ0qlHBSC4NjeDUO97t3-ew1V3V3tJmejLR9pP7huxgc_9AWyiMMWsZ8pdeLj-kwxfhemPSK_btDg2IWIfr4cHKngpSCHd0-itBu6mLIUUFtJ7UZ1jQYr4h4PKrfOPy1EKqHBpodMET8ozmPZmFxVhMI4WsqiMMfVGGFw9m460m7hXC8H8tSCR6vUHau0nMQmL9AWqA7AWUazvAMhDZNnLDUTEeqpJp-Hc3Y1jc_HcqGA3WyEzgY5mJSMXIEZJCO5zgLj8kcbdN7D6qkeBUQm9a0o9XQo5nF3qXNGX5uBH9lLYP_ZxWuIMHnaYOxEFgUZcAd2KUSAMBHHLVbJFU5_oyHmyquR_QKGq55AxwAJ-AN-ngZdexbfz9JO0OQsVsDUDMgrllHoj3Zys33d-iLuxkxPxp5LxsYcE2CnsfeJxcI0Yes_RApgTSSwMBTutlPZy1kXdBQpoS5yLvFxo-fJ-X-Ox-OpEBxbAXGe_KhesfPCyMeiovic9okCE11c8worH8_MwpnAsgl0szxCByIJwFnw95j5mkteRdDhxQxaC1DpCdn4jdL4boTHvMwIGw7OlPSGtsQWZTnLFJ8QK6QHm0NnZ0o6c5JaDLkFSkL5i0CcsyupK8","3","vZ1pwI6CzwpBhz346KrdUrlvwA1evi3NghKsx1LK","dac5735828cd4a70819147fb36d24411","","",System.getProperty("user-dir"));
         //DevnagriConfiguration d = new DevnagriConfiguration(System.getProperty("user-dir"));
-        //System.out.println(System.getProperty("user-dir"));
+        System.out.println(response);*/
         /*d.getAccessToken();
         System.out.println(d.getAccessToken());*/
-       // System.out.println("Response: " + d.getAccessToken()+" ;;;; "+d.getClientId()+" ;;;; "+d.getClientSecret()+" ;;;; "+d.getProjectKey());
 
-       /* byte[] hash = d.getSHA256("/home/fourtek/IdeaProjects/sampletwo/SyncClient.java");
-        System.out.println(hash);*/
     }
 
     public static String getResponse(){
