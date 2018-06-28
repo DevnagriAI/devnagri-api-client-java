@@ -33,7 +33,7 @@ public class RestClient {
         /* ADD HEADER INFO */
         if(!token.equalsIgnoreCase("")){
 
-            request.addHeader("authorization", token);
+            request.addHeader("authorization", "Bearer "+token);
 
         }
 

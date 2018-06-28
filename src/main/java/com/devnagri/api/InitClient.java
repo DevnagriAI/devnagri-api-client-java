@@ -1,6 +1,7 @@
 package com.devnagri.api;
 
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,13 +15,13 @@ public class InitClient {
     public String clientId;
     public String clientSecret;
     public String projectKey;
-    public String file;
+    public File file;
     public String fileLocation;
     private static String response;
     private static String requestType;
 
 
-    public String getResponseRequest(String requestType, String accessToken, String clientId, String clientSecret, String projectKey, String file , String fileLocation, String project){
+    public String getResponseRequest(String requestType, String accessToken, String clientId, String clientSecret, String projectKey, File file , String fileLocation, String project){
         this.accessToken = accessToken;
         this.clientId = clientId;
         this.clientSecret = clientSecret;

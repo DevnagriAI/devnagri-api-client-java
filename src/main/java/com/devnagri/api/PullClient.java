@@ -24,7 +24,6 @@ public class PullClient {
 
     public String pullData(){
         String urlPull = "http://dev.devnagri.co.in/api/project/pull";
-        String token = "Bearer "+accessToken;
 
         MultipartEntityBuilder entity = MultipartEntityBuilder.create()
                 .setMode(HttpMultipartMode.STRICT)
@@ -33,7 +32,7 @@ public class PullClient {
                 .addTextBody("project_key", projectKey);
 
         RestClient restClient = new RestClient();
-        response = restClient.callService(urlPull, entity, token);
+        response = restClient.callService(urlPull, entity, accessToken);
         System.out.println("Response is : "+ response);
         return response;
     }

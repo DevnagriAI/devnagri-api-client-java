@@ -25,7 +25,6 @@ public class StatusClient {
     public String getStatus(){
 
         String urlStatus = "http://dev.devnagri.co.in/api/project/status";
-        String token = "Bearer "+accessToken;
 
         MultipartEntityBuilder entity = MultipartEntityBuilder.create()
                 .setMode(HttpMultipartMode.STRICT)
@@ -34,7 +33,7 @@ public class StatusClient {
                 .addTextBody("project_key", projectKey);
 
         RestClient restClient = new RestClient();
-        response = restClient.callService(urlStatus, entity, token);
+        response = restClient.callService(urlStatus, entity, accessToken);
         System.out.println("Response is : "+ response);
 
         return response;
