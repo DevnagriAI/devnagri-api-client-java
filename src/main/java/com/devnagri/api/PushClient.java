@@ -35,8 +35,8 @@ public class PushClient {
                 .addTextBody("client_id", clientId)
                 .addTextBody("client_secret", clientSecret)
                 .addTextBody("project_key", projectKey)
-                .addTextBody("file[0]", file)
-                .addTextBody("file[1]", fileLocation);
+                .addTextBody("file[file]", file)
+                .addTextBody("file[location]", fileLocation);
 
         RestClient restClient = new RestClient();
         response = restClient.callService(urlPush, entity, token);
