@@ -53,14 +53,16 @@ public class RestClient {
 
         /* RESPONSE AS JSON STRING */
         String result = null;
-        if (statusCode==200){
-            try {
-                result = IOUtils.toString(response.getEntity().getContent(), "UTF-8");
-            } catch (IOException e) {
-                e.printStackTrace();
+        if(null!=response){
+            if (statusCode==200){
+                try {
+                    result = IOUtils.toString(response.getEntity().getContent(), "UTF-8");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }else{
+                result = response.toString();
             }
-        }else{
-            result = response.toString();
         }
 
         return result;
