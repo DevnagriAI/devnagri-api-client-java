@@ -9,7 +9,7 @@
     <!-- ********************************************** -->
     <groupId>com.devnagri</groupId>
     <artifactId>devnagri-api-client</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
         <name>Basic Maven Project</name>
         <description>A Maven project created from the library archetype.</description>
