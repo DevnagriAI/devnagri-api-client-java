@@ -7,19 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd8234f-c24c-44b2-8d31-4d30526b71f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_Gaurav_sengar_api_v1_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_FourtekIT_devnagri_api_client_java_v1_0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devnagri-api-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/devnagri-api-client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/DevnagriConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/GenerateTokenClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/InitClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PullClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PushClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/RestClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/StatusClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/SyncClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/config/checkstyle/checkstyle-rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/config/findbugs/findbugs-exclude.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/config/pmd/pmd-rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/markdown/acquire.md.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/markdown/index.md.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/markdown/info.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/markdown/reports.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/markdown/usage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/site/site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/test/java/com/devnagri/test/integration/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/test/java/com/devnagri/test/unit/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/test/resources/log4j2-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +47,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="271" column="24" selection-start-line="271" selection-start-column="24" selection-end-line="271" selection-end-column="24" />
+            <state relative-caret-position="-390">
+              <caret line="108" column="24" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -48,15 +61,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changes.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -134,6 +138,7 @@
       <find>repository</find>
       <find>build</find>
       <find>com.github.Gaurav-sengar</find>
+      <find>jar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,13 +181,14 @@
     <option name="width" value="1299" />
     <option name="height" value="736" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,29 +217,13 @@
             <path>
               <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="devnagri" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="devnagri" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -248,6 +238,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -335,7 +330,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1442" height="859" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -349,7 +343,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32916668" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28550932" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29411766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -358,7 +352,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.34166667" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.34166667" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -368,14 +362,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27259684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -536,13 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3090">
@@ -818,17 +806,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/changes/changes.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="271" column="24" selection-start-line="271" selection-start-column="24" selection-end-line="271" selection-end-column="24" />
+        <state relative-caret-position="-390">
+          <caret line="108" column="24" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="24" />
         </state>
       </provider>
     </entry>

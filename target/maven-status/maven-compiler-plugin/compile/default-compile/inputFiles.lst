@@ -1,8 +1,6 @@
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/SyncClient.java
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/PullClient.java
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/RestClient.java
-/home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/test/java/com/devnagri/test/unit/package-info.java
-/home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/test/java/com/devnagri/test/integration/package-info.java
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/InitClient.java
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/StatusClient.java
 /home/fourtek/IdeaProjects/github_devnagri_api_client/devnagri-api-client-java/src/main/java/com/devnagri/api/MainClass.java
