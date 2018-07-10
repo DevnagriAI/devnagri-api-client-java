@@ -9,7 +9,7 @@
     <!-- ********************************************** -->
     <groupId>com.devnagri</groupId>
     <artifactId>devnagri-api-client</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
 
         <name>Basic Maven Project</name>
@@ -66,7 +66,7 @@
             </repository>
         </repositories>-->
 
-    <!--<repositories>
+    <repositories>
         <repository>
             <snapshots>
                 <enabled>false</enabled>
@@ -86,7 +86,6 @@
             <url>https://gauravsengar.bintray.com/maven-api</url>
         </pluginRepository>
     </pluginRepositories>
--->
 
 
         <!-- ********************************************** -->
@@ -359,6 +358,14 @@
                         </dependency>
                     </dependencies>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.10.0</version>
+                    <configuration>
+                        <connectionType>connection</connectionType>
+                    </configuration>
+                </plugin>
             </plugins>
             <!--added by me for removing error-->
             <extensions>
@@ -390,14 +397,7 @@
                              </sourceFileExcludes>
                          </configuration>
                      </plugin>
-                     <plugin>
-                         <groupId>org.apache.maven.plugins</groupId>
-                         <artifactId>maven-scm-plugin</artifactId>
-                         <version>1.10.0</version>
-                         <configuration>
-                             <connectionType>connection</connectionType>
-                         </configuration>
-                     </plugin>
+
 
                  </plugins>
         </reporting>
