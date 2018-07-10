@@ -11,6 +11,7 @@
     <artifactId>devnagri-api-client</artifactId>
     <version>1.0.2-SNAPSHOT</version>
 
+
         <name>Basic Maven Project</name>
         <description>A Maven project created from the library archetype.</description>
         <url>https://github.com/FourtekIT/devnagri-api-client-java</url>
@@ -32,7 +33,7 @@
             <connection>scm:git:https://github.com/FourtekIT/devnagri-api-client-java.git</connection>
             <developerConnection>scm:https://github.com/FourtekIT/devnagri-api-client-java.git</developerConnection>
             <tag>head</tag>
-            <url>https://github.com/FourtekIT/devnagri-api-client-java</url>
+            <url>https://github.com/FourtekIT/devnagri-api-client-java/</url>
         </scm>
 
         <issueManagement>
@@ -50,20 +51,13 @@
             <notifiers />
         </ciManagement>-->
 
-        <distributionManagement>
-            <repository>
-                <uniqueVersion>false</uniqueVersion>
-                <id>releases</id>
-                <name>Releases Repository</name>
-                <url>https://bintray.com/gauravsengar/maven-api/devnagri-api-client</url>
-            </repository>
-            <!--<snapshotRepository>
-                <uniqueVersion>false</uniqueVersion>
-                <id>snapshots</id>
-                <name>Snapshots Repository</name>
-                <url>https://bintray.com/gauravsengar/maven-api/devnagri-api-client</url>
-            </snapshotRepository>-->
-        </distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>bintray-gauravsengar-maven-api</id>
+            <name>gauravsengar-maven-api</name>
+            <url>https://api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
+        </repository>
+    </distributionManagement>
 
         <!--<repositories>
             <repository>
@@ -99,8 +93,8 @@
         <!-- ****************** PROFILES ****************** -->
         <!-- ********************************************** -->
 
-        <!--<profiles>
-            <profile>
+        <profiles>
+            <!--<profile>
                 &lt;!&ndash; Profile for the Eclipse Maven plugin
                  Sets the POM so this plugin does not give the usual unregistered goals
                    errors
@@ -139,75 +133,50 @@
                         </plugins>
                     </pluginManagement>
                 </build>
-            </profile>
-            &lt;!&ndash; ==============================================
+            </profile>-->
+            <!-- ==============================================
              ============ DEPLOYMENT PROFILES =============
-             ==============================================&ndash;&gt;
-            &lt;!&ndash;<profile>
-                 &lt;!&ndash;Release deployment profile.&ndash;&gt;
-                 &lt;!&ndash;Sets the site repository to point to the releases repo.&ndash;&gt;
+             ==============================================-->
+            <profile>
+                 <!--Release deployment profile.-->
+                 <!--Sets the site repository to point to the releases repo.-->
                 <id>deployment-release</id>
                 <activation>
-                     &lt;!&ndash;Active by default so the repository appears in the reports.&ndash;&gt;
+                     <!--Active by default so the repository appears in the reports.-->
                     <activeByDefault>true</activeByDefault>
                 </activation>
                 <distributionManagement>
                     <site>
                         <id>site</id>
                         <name>Project Documentation Site</name>
-                         &lt;!&ndash;The URL should be set externally&ndash;&gt;
+                         <!--The URL should be set externally-->
                         <url>${site.release.url}</url>
                     </site>
                 </distributionManagement>
-            </profile>&ndash;&gt;
-            &lt;!&ndash;<profile>
-                 &lt;!&ndash;Development deployment profile.
-                 Sets the site repository to point to the development repo.&ndash;&gt;
+            </profile>
+            <profile>
+                 <!--Development deployment profile.
+                 Sets the site repository to point to the development repo.-->
                 <id>deployment-development</id>
                 <distributionManagement>
                     <site>
                         <id>site-development</id>
                         <name>Project Development Documentation Site</name>
-                         &lt;!&ndash;The URL should be set externally&ndash;&gt;
+                         <!--The URL should be set externally-->
                         <url>${site.develop.url}</url>
                     </site>
                 </distributionManagement>
-            </profile>&ndash;&gt;
+            </profile>
             <profile>
-                &lt;!&ndash; Deployment profile.
-                 Sets ups the environment for deployment.&ndash;&gt;
+                <!-- Deployment profile.
+                 Sets ups the environment for deployment.-->
                 <id>deployment</id>
                 <properties>
-                     &lt;!&ndash;Tests are skipped.&ndash;&gt;
+                     <!--Tests are skipped.-->
                     <maven.test.skip>true</maven.test.skip>
                 </properties>
             </profile>
-
-        &lt;!&ndash; This code is added from my side to resolve the error&ndash;&gt;
-        &lt;!&ndash;<profile>
-            <repositories>
-                <repository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>bintray-gauravsengar-maven-api</id>
-                    <name>bintray</name>
-                    <url>https://gauravsengar.bintray.com/maven-api</url>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <id>bintray-gauravsengar-maven-api</id>
-                    <name>bintray-plugins</name>
-                    <url>https://gauravsengar.bintray.com/maven-api</url>
-                </pluginRepository>
-            </pluginRepositories>
-            <id>bintray</id>
-        </profile>&ndash;&gt;
-    </profiles>-->
+    </profiles>
 
         <!-- ********************************************** -->
         <!-- *********** ORGANIZATION AND MEMBERS ********* -->
@@ -378,15 +347,28 @@
                         </dependency>
                     </dependencies>-->
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.7</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.shared</groupId>
+                            <artifactId>maven-filtering</artifactId>
+                            <version>1.3</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
             </plugins>
             <!--added by me for removing error-->
-            <!--<extensions>
+            <extensions>
+                <!-- Enabling the use of SSH -->
                 <extension>
                     <groupId>org.apache.maven.wagon</groupId>
-                    <artifactId>wagon-ssh</artifactId>
-                    <version>1.0-beta-7</version>
+                    <artifactId>wagon-ssh-external</artifactId>
+                    <version>1.0-beta-6</version>
                 </extension>
-            </extensions>-->
+            </extensions>
         </build>
 
 
@@ -394,60 +376,29 @@
         <!-- ****************** REPORTS ******************* -->
         <!-- ********************************************** -->
 
-       <!-- <reporting>
-            <plugins>
-                <plugin>
-                    &lt;!&ndash; Checkstyle &ndash;&gt;
-                    &lt;!&ndash; Checks that the source files comply with style standards &ndash;&gt;
-                    &lt;!&ndash; It is using a customized rules file &ndash;&gt;
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <configuration>
-                        &lt;!&ndash; The customized rules file &ndash;&gt;
-                        <configLocation>${project.basedir}/src/config/checkstyle/checkstyle-rules.xml</configLocation>
-                        &lt;!&ndash; Excludes generated code &ndash;&gt;
-                        <excludes>**/generated/**/*</excludes>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    &lt;!&ndash; FindBugs &ndash;&gt;
-                    &lt;!&ndash; Checks for patterns which are prone to errors &ndash;&gt;
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>findbugs-maven-plugin</artifactId>
-                    <configuration>
-                        &lt;!&ndash; Exclusion patterns &ndash;&gt;
-                        <excludeFilterFile>${project.basedir}/src/config/findbugs/findbugs-exclude.xml</excludeFilterFile>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    &lt;!&ndash; Javadoc &ndash;&gt;
-                    &lt;!&ndash; Generates the javadocs &ndash;&gt;
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <configuration>
-                        <sourceFileExcludes>
-                            &lt;!&ndash; Excludes generated code &ndash;&gt;
-                            <exclude>**/generated/**/*</exclude>
-                        </sourceFileExcludes>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    &lt;!&ndash; PMD &ndash;&gt;
-                    &lt;!&ndash; Checks that the code complies with a series of code quality rules &ndash;&gt;
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-pmd-plugin</artifactId>
-                    <configuration>
-                        <rulesets>
-                            &lt;!&ndash; The customized rules file &ndash;&gt;
-                            <ruleset>${project.basedir}/src/config/pmd/pmd-rules.xml</ruleset>
-                        </rulesets>
-                        <excludes>
-                            &lt;!&ndash; Excludes generated code &ndash;&gt;
-                            <exclude>**/generated/**/*</exclude>
-                        </excludes>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </reporting>-->
+        <reporting>
+                 <plugins>
+                     <plugin>
+                         <!-- Javadoc -->
+                         <!-- Generates the javadocs -->
+                         <groupId>org.apache.maven.plugins</groupId>
+                         <artifactId>maven-javadoc-plugin</artifactId>
+                         <configuration>
+                             <sourceFileExcludes>
+                                 <!-- Excludes generated code -->
+                                 <exclude>**/generated/**/*</exclude>
+                             </sourceFileExcludes>
+                         </configuration>
+                     </plugin>
+                     <plugin>
+                         <groupId>org.apache.maven.plugins</groupId>
+                         <artifactId>maven-scm-plugin</artifactId>
+                         <version>1.10.0</version>
+                         <configuration>
+                             <connectionType>connection</connectionType>
+                         </configuration>
+                     </plugin>
 
+                 </plugins>
+        </reporting>
     </project>
