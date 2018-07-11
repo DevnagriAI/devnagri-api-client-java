@@ -32,9 +32,7 @@ public class RestClient {
 
         /* ADD HEADER INFO */
         if(!token.equalsIgnoreCase("")){
-
             request.addHeader("authorization", "Bearer "+token);
-
         }
 
         request.addHeader(/*"content-type"*/"Accept", "application/json");
@@ -60,6 +58,8 @@ public class RestClient {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }else if(statusCode==204){
+                result = "No files available";
             }else{
                 result = response.toString();
             }

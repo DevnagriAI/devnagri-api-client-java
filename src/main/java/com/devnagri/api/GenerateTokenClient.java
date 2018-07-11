@@ -23,7 +23,8 @@ public class GenerateTokenClient {
     public String clientSecret;
     public String projectKey;
     private RestClient restClient;
-    private int statusCode;
+    private int statusCode=0;
+    private String src_lang="";
 
     public GenerateTokenClient(String clientId, String clientSecret, String projectKey){
         this.clientId = clientId;
@@ -53,6 +54,8 @@ public class GenerateTokenClient {
             JSONObject jsonObject = new JSONObject(response);
 
             String access_token = jsonObject.getString("access_token");
+            JSONObject source_language = jsonObject.getJSONObject("source_language");
+            src_lang = source_language.getString("code");
             token = access_token;
             final String fileName = "devnagri.yml";
             ArrayList<String> key = new ArrayList<String>();
@@ -74,51 +77,16 @@ public class GenerateTokenClient {
             }
         }
 
-
-        //System.out.println(key + " " + value);
-
         return response;
     }
-
-  /*  public static void main(String args[]){
-        String urlGenerateToken = "http://dev.devnagri.co.in/api/key/validations";
-        String token = "";
-        String response = "";
-        *//*MultipartEntityBuilder entity = MultipartEntityBuilder.create()
-                .setMode(HttpMultipartMode.STRICT)
-                .addTextBody("client_id", "3")
-                .addTextBody("client_secret", "vZ1pwI6CzwpBhz346KrdUrlvwA1evi3NghKsx1LK")
-                .addTextBody("project_key", "dac5735828cd4a70819147fb36d24411");*//*
-
-        MultipartEntityBuilder entity = MultipartEntityBuilder.create()
-                .setMode(HttpMultipartMode.STRICT)
-                .addTextBody("client_id", clientId)
-                .addTextBody("client_secret", clientSecret)
-                .addTextBody("project_key", projectKey);
-
-        RestClient restClient = new RestClient();
-        response = restClient.callService(urlGenerateToken, entity, token);
-        System.out.println(response);
-    }
-*/
-    /*public void testDumpWriter() throws IOException {
-        Map<String, Object> data = new HashMap<String, Object>();
-        data.put("ClientID", "");
-        data.put("ClientSecret", "");
-        data.put("ProjectKey", "");
-        data.put("RootFolder", "");
-        data.put("Extension", "");
-        data.put("SourceLanguage", "");
-        data.put("TargetLanguages", "");
-
-        Yaml yaml = new Yaml();
-        FileWriter writer = new FileWriter("/path/to/devnagri.yml");
-        yaml.dump(data, writer);
-    }*/
 
 
     public String getToken(){
         return token;
+    }
+
+    public String getSrcLanguage(){
+        return src_lang;
     }
 
     public int statusCode(){

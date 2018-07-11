@@ -276,4 +276,5 @@ public class DevnagriConfiguration {
         System.out.println(new BASE64Encoder().encode(hash));
         return hash;
     }
+
 }

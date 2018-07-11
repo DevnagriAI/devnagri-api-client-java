@@ -19,6 +19,7 @@ public class InitClient {
     public String fileLocation;
     private static String response;
     private static String requestType;
+    private String src_lang;
 
 
     public String getResponseRequest(String requestType, String accessToken, String clientId, String clientSecret, String projectKey, File file , String fileLocation, String project){
@@ -35,6 +36,7 @@ public class InitClient {
             response = generateTokenClient.getGeneratedToken();
             if(null!=response && !response.equalsIgnoreCase("") && generateTokenClient.statusCode()==200){
                 accessToken = generateTokenClient.getToken();
+                src_lang = generateTokenClient.getSrcLanguage();
                 this.accessToken = accessToken;
                 init(project);
             }
@@ -85,8 +87,9 @@ public class InitClient {
         base.put("ProjectKey", projectKey);
         base.put("RootFolder", "values");
         base.put("Extension", ".xml");
-        base.put("SourceLanguage", "en");
+        base.put("SourceLanguage", src_lang);
         base.put("TargetLanguages", "br");
+        base.put("StatusCode", "br");
 
         return base;
     }
