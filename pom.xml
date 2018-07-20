@@ -7,7 +7,7 @@
     <!-- ********************************************** -->
     <groupId>com.devnagri</groupId>
     <artifactId>devnagri-api-client</artifactId>
-    <version>1.1.5-SNAPSHOT</version>
+    <version>1.0.7-SNAPSHOT</version>
 
 
         <name>Basic Maven Project</name>
@@ -30,8 +30,8 @@
         <scm>
             <connection>scm:git:https://github.com/FourtekIT/devnagri-api-client-java.git</connection>
             <developerConnection>scm:git:https://github.com/FourtekIT/devnagri-api-client-java.git</developerConnection>
-            <tag>1.1.1-SNAPSHOT</tag>
-            <url>scm:git:https://github.com/FourtekIT/devnagri-api-client-java</url>
+            <tag>head</tag>
+            <url>https://github.com/FourtekIT/devnagri-api-client-java/${project.scm.tag}</url>
         </scm>
 
         <issueManagement>
@@ -64,7 +64,7 @@
     <pluginRepositories>
         <pluginRepository>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
             <id>bintray-gauravsengar-maven-api</id>
             <name>bintray-plugins</name>
@@ -78,12 +78,12 @@
         <!-- ********************************************** -->
 
         <profiles>
-            <!--<profile>
-                &lt;!&ndash; Profile for the Eclipse Maven plugin
+            <profile>
+                <!-- Profile for the Eclipse Maven plugin
                  Sets the POM so this plugin does not give the usual unregistered goals
                    errors
                  It will be activated automatically on Eclipse if this has the m2e plugin,
-                   by detecting the version property&ndash;&gt;
+                   by detecting the version property-->
                 <id>idea-maven</id>
                 <activation>
                     <property>
@@ -94,18 +94,18 @@
                     <pluginManagement>
                         <plugins>
                             <plugin>
-                                &lt;!&ndash; m2e lifecycle mapping
+                                <!-- m2e lifecycle mapping
                                  This is used to configure the Maven plugin for Eclipse.
                                  Among other things, it allows registering goals, which
                                    Eclipse would otherwise reject.
-                                 It has no real effect on Maven.&ndash;&gt;
+                                 It has no real effect on Maven.-->
                                 <groupId>org.eclipse.m2e</groupId>
                                 <artifactId>lifecycle-mapping</artifactId>
                                 <version>${plugin.lifecycle.version}</version>
                                 <configuration>
-                                    &lt;!&ndash; Sample fix for plugin executions.
+                                    <!-- Sample fix for plugin executions.
                                      This is to be used in case a Maven plugin gives problems
-                                       in Eclipse&ndash;&gt;
+                                       in Eclipse-->
                                      <lifecycleMappingMetadata> <pluginExecutions> <pluginExecution>
                                        <pluginExecutionFilter> <groupId>org.jacoco</groupId> <artifactId>jacoco-maven-plugin</artifactId>
                                        <versionRange>[0.5,)</versionRange> <goals> <goal>prepare-agent</goal> </goals> </pluginExecutionFilter>
@@ -117,7 +117,7 @@
                         </plugins>
                     </pluginManagement>
                 </build>
-            </profile>-->
+            </profile>
             <!-- ==============================================
              ============ DEPLOYMENT PROFILES =============
              ==============================================-->
@@ -134,7 +134,7 @@
                         <id>site</id>
                         <name>Project Documentation Site</name>
                          <!--The URL should be set externally-->
-                        <url>${site.release.url}</url>
+                        <url>api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
                     </site>
                 </distributionManagement>
             </profile>
@@ -147,7 +147,7 @@
                         <id>site-development</id>
                         <name>Project Development Documentation Site</name>
                          <!--The URL should be set externally-->
-                        <url>${site.develop.url}</url>
+                        <url>api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
                     </site>
                 </distributionManagement>
             </profile>
@@ -192,24 +192,24 @@
         <!-- ********************************************** -->
 
         <!--<properties>
-            &lt;!&ndash; ============================================== &ndash;&gt;
-            &lt;!&ndash; =============== MANIFEST DATA ================ &ndash;&gt;
-            &lt;!&ndash; ============================================== &ndash;&gt;
+            &lt;!&ndash; ==============================================
+             =============== MANIFEST DATA ================
+             ==============================================&ndash;&gt;
             <manifest.name>com/devnagri</manifest.name>
-            &lt;!&ndash; ============================================== &ndash;&gt;
-            &lt;!&ndash; =========== DEPENDENCIES VERSIONS ============ &ndash;&gt;
-            &lt;!&ndash; ============================================== &ndash;&gt;
+            &lt;!&ndash; ==============================================
+             =========== DEPENDENCIES VERSIONS ============
+             ==============================================&ndash;&gt;
             <guava.version>20.0</guava.version>
             <junit.version>4.12</junit.version>
             <log4j.version>2.7</log4j.version>
             <mockito.version>2.18.3</mockito.version>
-            &lt;!&ndash; ============================================== &ndash;&gt;
-            &lt;!&ndash; ================= MAVEN SITE ================= &ndash;&gt;
-            &lt;!&ndash; ============================================== &ndash;&gt;
+             &lt;!&ndash;==============================================
+             ================= MAVEN SITE =================
+             ==============================================&ndash;&gt;
             <site.skin.version>1.2.0</site.skin.version>
             <bintrayURL>https://bintray.com/gauravsengar/maven-api/devnagri-api-client/view</bintrayURL>
             <mavenURL>http://mvnrepository.com</mavenURL>
-            &lt;!&ndash;<mavenURL>http://mvnrepository.com/artifact/${project.groupId}/${project.artifactId}</mavenURL>&ndash;&gt;
+            <mavenURL>http://mvnrepository.com/artifact/${project.groupId}/${project.artifactId}</mavenURL>
         </properties>-->
 
         <!-- ********************************************** -->
@@ -232,7 +232,7 @@
                 <version>4.11</version>
                 <scope>test</scope>
             </dependency>
-           <!-- <dependency>
+            <!--<dependency>
                 &lt;!&ndash; Log4j core &ndash;&gt;
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
@@ -317,19 +317,40 @@
                     </executions>
                 </plugin>
                 <plugin>
-                    <!-- Site -->
-                    <!-- Generates the Maven Site -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <!--<plugin>
+                    &lt;!&ndash; Site &ndash;&gt;
+                    &lt;!&ndash; Generates the Maven Site &ndash;&gt;
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.7.1</version>
-                    <!--<dependencies>
+                    &lt;!&ndash;<dependencies>
                         <dependency>
                             &lt;!&ndash; Docs Maven Skin &ndash;&gt;
                             <groupId>com.bernardomg.maven.skins</groupId>
                             <artifactId>docs-maven-skin</artifactId>
                             <version>${site.skin.version}</version>
                         </dependency>
-                    </dependencies>-->
+                    </dependencies>&ndash;&gt;
+                </plugin>-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.wagon</groupId>
+                            <artifactId>wagon-ssh</artifactId>
+                            <version>2.10</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -343,6 +364,7 @@
                         </dependency>
                     </dependencies>
                 </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-scm-plugin</artifactId>
@@ -350,6 +372,11 @@
                     <configuration>
                         <connectionType>connection</connectionType>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.5.2</version>
                 </plugin>
             </plugins>
             <!--added by me for removing error-->
@@ -375,6 +402,7 @@
                          <!-- Generates the javadocs -->
                          <groupId>org.apache.maven.plugins</groupId>
                          <artifactId>maven-javadoc-plugin</artifactId>
+                         <version>3.0.1</version>
                          <configuration>
                              <sourceFileExcludes>
                                  <!-- Excludes generated code -->
@@ -382,7 +410,6 @@
                              </sourceFileExcludes>
                          </configuration>
                      </plugin>
-
 
                  </plugins>
         </reporting>

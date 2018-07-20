@@ -7,12 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd8234f-c24c-44b2-8d31-4d30526b71f4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devnagri-api-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/devnagri-api-client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml.releaseBackup" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml.releaseBackup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release.properties" beforeDir="false" afterPath="$PROJECT_DIR$/release.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/devnagri-api-client-1.1.2-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml.releaseBackup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkout" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/DevnagriConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/DevnagriConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/GenerateTokenClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/GenerateTokenClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/InitClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/InitClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PullClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/PullClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PushClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/PushClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/RestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/RestClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/StatusClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/StatusClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/SyncClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devnagri/api/SyncClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/devnagri-api-client-1.1.4-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +39,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="377">
+              <caret line="379" column="25" selection-start-line="379" selection-start-column="25" selection-end-line="379" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="release.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/release.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -93,6 +113,9 @@
       <find>1.0.</find>
       <find>scm</find>
       <find>https://github.com/FourtekIT/devnagri-api-client-java.git</find>
+      <find>properties</find>
+      <find>wagon-ssh</find>
+      <find>site</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,6 +141,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/devnagri/api/DevnagriConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devnagri/api/InitClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devnagri/api/GenerateTokenClient.java" />
+        <option value="$PROJECT_DIR$/target/checkout/release.properties" />
+        <option value="$PROJECT_DIR$/target/checkout/pom.xml.releaseBackup" />
+        <option value="$PROJECT_DIR$/release.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -130,10 +156,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="-11" />
-    <option name="width" value="1442" />
-    <option name="height" value="859" />
+    <option name="y" value="-4" />
+    <option name="width" value="1440" />
+    <option name="height" value="851" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -143,9 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,51 +178,15 @@
             <path>
               <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="devnagri_api_client_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devnagri-api-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="devnagri-api-client-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +293,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1442" height="859" extended-state="6" />
+    <frame x="0" y="-4" width="1440" height="851" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -317,18 +303,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50071734" side_tool="true" weight="0.32916668" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39239597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4246772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.34166667" />
@@ -341,14 +327,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27259684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -397,68 +383,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/StatusClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="72" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/PushClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/SyncClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/RestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/PullClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devnagri/api/InitClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -502,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,9 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,9 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,10 +668,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/target/maven-archiver/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/pom.xml.releaseBackup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/release.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/target/javadoc-bundle-options/package-list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/checkout/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="377">
+          <caret line="379" column="25" selection-start-line="379" selection-start-column="25" selection-end-line="379" selection-end-column="25" />
         </state>
       </provider>
     </entry>
