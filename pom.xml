@@ -7,7 +7,7 @@
     <!-- ********************************************** -->
     <groupId>com.devnagri</groupId>
     <artifactId>devnagri-api-client</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
 
         <name>Basic Maven Project</name>
@@ -47,11 +47,11 @@
         <repository>
             <id>gauravsengar-maven-api</id>
             <name>gauravsengar-maven-api</name>
-            <url>https://miscapp.in/g2demo/</url>
+            <url>https://api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
         </repository>
     </distributionManagement>
 
-    <!--<repositories>
+   <!-- <repositories>
         <repository>
             <snapshots>
                 <enabled>false</enabled>

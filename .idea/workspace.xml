@@ -7,66 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd8234f-c24c-44b2-8d31-4d30526b71f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/devnagri_api_client_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mashape_unirest_unirest_java_1_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devnagri-api-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/devnagri_api_client_jar/devnagri-api-client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml.releaseBackup" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/release.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/DevnagriConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/GenerateTokenClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/InitClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/MainClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/PullClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/PushClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/RestClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/StatusClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devnagri/api/SyncClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/DevnagriConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/GenerateTokenClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/InitClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PullClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/PushClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/RestClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/StatusClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devnagri/api/SyncClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/devnagri-api-client-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/checkout" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +27,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2910">
-              <caret line="209" column="20" selection-start-line="209" selection-start-column="13" selection-end-line="209" selection-end-column="20" />
+            <state relative-caret-position="511">
+              <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -342,7 +288,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4246772" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20946915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -742,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="209" column="20" selection-start-line="209" selection-start-column="13" selection-end-line="209" selection-end-column="20" />
+        <state relative-caret-position="511">
+          <caret line="71" column="27" lean-forward="true" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
         </state>
       </provider>
     </entry>
