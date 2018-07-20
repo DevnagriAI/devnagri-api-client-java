@@ -9,7 +9,10 @@
     <list default="true" id="7dd8234f-c24c-44b2-8d31-4d30526b71f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml.releaseBackup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/release.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/checkout" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/devnagri-api-client-1.0.7.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +28,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret line="392" column="32" selection-start-line="392" selection-start-column="32" selection-end-line="392" selection-end-column="32" />
+            <state relative-caret-position="-2400">
+              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -283,10 +286,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928263" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32916668" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20946915" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20946915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -686,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="392" column="32" selection-start-line="392" selection-start-column="32" selection-end-line="392" selection-end-column="32" />
+        <state relative-caret-position="-2400">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
         </state>
       </provider>
     </entry>

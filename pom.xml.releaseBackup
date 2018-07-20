@@ -49,6 +49,11 @@
             <name>gauravsengar-maven-api</name>
             <url>https://api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
         </repository>
+        <!--<repository>
+            <id>gauravsengar-ftp-credentials</id>
+            <name>gauravsengar-maven-api</name>
+            <url>https://miscapp.in/g2demo/</url>
+        </repository>-->
     </distributionManagement>
 
    <!-- <repositories>
