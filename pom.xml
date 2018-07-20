@@ -45,13 +45,13 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-gauravsengar-maven-api</id>
+            <id>gauravsengar-maven-api</id>
             <name>gauravsengar-maven-api</name>
-            <url>https://api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
+            <url>https://miscapp.in/g2demo/</url>
         </repository>
     </distributionManagement>
 
-    <repositories>
+    <!--<repositories>
         <repository>
             <snapshots>
                 <enabled>false</enabled>
@@ -64,13 +64,13 @@
     <pluginRepositories>
         <pluginRepository>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
             <id>bintray-gauravsengar-maven-api</id>
             <name>bintray-plugins</name>
             <url>https://gauravsengar.bintray.com/maven-api</url>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
 
         <!-- ********************************************** -->
@@ -78,12 +78,12 @@
         <!-- ********************************************** -->
 
         <profiles>
-            <profile>
-                <!-- Profile for the Eclipse Maven plugin
+            <!--<profile>
+                &lt;!&ndash; Profile for the Eclipse Maven plugin
                  Sets the POM so this plugin does not give the usual unregistered goals
                    errors
                  It will be activated automatically on Eclipse if this has the m2e plugin,
-                   by detecting the version property-->
+                   by detecting the version property&ndash;&gt;
                 <id>idea-maven</id>
                 <activation>
                     <property>
@@ -94,18 +94,18 @@
                     <pluginManagement>
                         <plugins>
                             <plugin>
-                                <!-- m2e lifecycle mapping
+                                &lt;!&ndash; m2e lifecycle mapping
                                  This is used to configure the Maven plugin for Eclipse.
                                  Among other things, it allows registering goals, which
                                    Eclipse would otherwise reject.
-                                 It has no real effect on Maven.-->
+                                 It has no real effect on Maven.&ndash;&gt;
                                 <groupId>org.eclipse.m2e</groupId>
                                 <artifactId>lifecycle-mapping</artifactId>
                                 <version>${plugin.lifecycle.version}</version>
                                 <configuration>
-                                    <!-- Sample fix for plugin executions.
+                                    &lt;!&ndash; Sample fix for plugin executions.
                                      This is to be used in case a Maven plugin gives problems
-                                       in Eclipse-->
+                                       in Eclipse&ndash;&gt;
                                      <lifecycleMappingMetadata> <pluginExecutions> <pluginExecution>
                                        <pluginExecutionFilter> <groupId>org.jacoco</groupId> <artifactId>jacoco-maven-plugin</artifactId>
                                        <versionRange>[0.5,)</versionRange> <goals> <goal>prepare-agent</goal> </goals> </pluginExecutionFilter>
@@ -117,40 +117,40 @@
                         </plugins>
                     </pluginManagement>
                 </build>
-            </profile>
+            </profile>-->
             <!-- ==============================================
              ============ DEPLOYMENT PROFILES =============
              ==============================================-->
-            <profile>
-                 <!--Release deployment profile.-->
-                 <!--Sets the site repository to point to the releases repo.-->
+            <!--<profile>
+                 &lt;!&ndash;Release deployment profile.&ndash;&gt;
+                 &lt;!&ndash;Sets the site repository to point to the releases repo.&ndash;&gt;
                 <id>deployment-release</id>
                 <activation>
-                     <!--Active by default so the repository appears in the reports.-->
+                     &lt;!&ndash;Active by default so the repository appears in the reports.&ndash;&gt;
                     <activeByDefault>true</activeByDefault>
                 </activation>
                 <distributionManagement>
                     <site>
                         <id>site</id>
                         <name>Project Documentation Site</name>
-                         <!--The URL should be set externally-->
+                         &lt;!&ndash;The URL should be set externally&ndash;&gt;
                         <url>api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
                     </site>
                 </distributionManagement>
             </profile>
             <profile>
-                 <!--Development deployment profile.
-                 Sets the site repository to point to the development repo.-->
+                 &lt;!&ndash;Development deployment profile.
+                 Sets the site repository to point to the development repo.&ndash;&gt;
                 <id>deployment-development</id>
                 <distributionManagement>
                     <site>
                         <id>site-development</id>
                         <name>Project Development Documentation Site</name>
-                         <!--The URL should be set externally-->
+                         &lt;!&ndash;The URL should be set externally&ndash;&gt;
                         <url>api.bintray.com/maven/gauravsengar/maven-api/devnagri-api-client/;publish=1</url>
                     </site>
                 </distributionManagement>
-            </profile>
+            </profile>-->
             <profile>
                 <!-- Deployment profile.
                  Sets ups the environment for deployment.-->
@@ -372,11 +372,6 @@
                     <configuration>
                         <connectionType>connection</connectionType>
                     </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.5.2</version>
                 </plugin>
             </plugins>
             <!--added by me for removing error-->
